@@ -1,0 +1,39 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container" style="margin-top: 100px">
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'mysite/images/hackman.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Hackman</h5>
+                    <p class="card-text">Recent Experience with Hackman</p>
+                    <p class="card-text">
+                        <small class="text-muted">https://twitter.com/wearehackman</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{% static 'mysite/images/trip.jpeg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Random Weekend trips</h5>
+                    <p class="card-text">Recent trip to DD hills</p>
+                    <p class="card-text">
+                        <small class="text-muted">more trips to follow</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{% static 'mysite/images/tattoo.jpeg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Tattoos</h5>
+                    <p class="card-text">Obsession for ink</p>
+                    <p class="card-text">
+                        <small class="text-muted">Suggest me a new one</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
